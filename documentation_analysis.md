@@ -20,7 +20,7 @@ This application seeks to optimize delivery routes between a warehouse and custo
 ### Key Requirements:
 1. Functional Requirements
 
-## Chosen Data Structure:
+## Chosen Data Structure
 - Data Structure Used:
 
 ### Why was this data structure selected?:
