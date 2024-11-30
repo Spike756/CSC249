@@ -2,7 +2,7 @@
 - Application Name: Delivery Route Optimization System
 - Domain: Transportation
 
-## Description: 
+## Description
 This application seeks to optimize delivery routes between a warehouse and customers. It calculates the most efficient path to minimize time and delivery costs. The application uses Dijkstra's algorithm by determining the shortest route in a weighted graph. The graph represents the delivery network of where nodes are locations, and edges are paths with weights as distance or travel costs.
 
 ## Key Capabilities and Requirements
@@ -20,7 +20,7 @@ This application seeks to optimize delivery routes between a warehouse and custo
 ### Key Requirements:
 1. Functional Requirements
 
-## Chosen Data Structure:
+## Chosen Data Structure
 - Data Structure Used:
 
 ### Why was this data structure selected?:
