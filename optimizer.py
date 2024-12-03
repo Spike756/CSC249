@@ -1,6 +1,9 @@
 import heapq
 
 def dijkstra(graph, start_node, target):
+    if not in graph.adjacency_list:
+        raise ValueError("Graph is empty. Please add nodes and edges before running Djikstra's algorithm")
+        
     distances = {node: float('inf') for node in graph.adjacency_list}
     distances[start_node] = 0
     priority_queue = [(0, start_node)]
@@ -17,6 +20,10 @@ def dijkstra(graph, start_node, target):
                 distances[neighbor] = distance
                 shortest_path[neighbor] = current_node
                 heapq.heappush(priority_queue, (distance, neighbor))
+
+
+    if distances[target] == float('inf'):
+        raise ValueError(f"Target node: '{target}' can't be reached from start node '{start_mode}'.")
 
     path = []
     node = target
