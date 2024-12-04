@@ -1,6 +1,6 @@
 # Project Analysis Document: Delivery Route Optimization 
-- Application Name: Delivery Route Optimization System
-- Domain: Transportation
+- **Application Name:** Delivery Route Optimization System
+- **Domain:** Navigation and Pathfinding
 
 ## Description
 This application seeks to optimize delivery routes between a warehouse and customers. It calculates the most efficient path to minimize time and delivery costs. The application uses Dijkstra's algorithm by determining the shortest route in a weighted graph. The graph represents the delivery network of where nodes are locations, and edges are paths with weights as distance or travel costs.
