@@ -18,13 +18,33 @@ This application seeks to optimize delivery routes between a warehouse and custo
 - Returns the most optimal route and total cost.
 
 ### Key Requirements:
-1. Functional Requirements
+1. **Functional Requirements**
+- Locations and connections represented by the graph. 
+- Allow the addition of nodes and edges. 
+- Determine the shortest paths for destinations. 
 
 ## Chosen Data Structure
-- Data Structure Used:
+- Data Structure Used: Graph / Adjacency List 
 
 ### Why was this data structure selected?:
-1.
+1. **Relevance to the Domain**
+- The adjacency list is well-suited for showing a sparse graph, which is commonly used in logistic networks where locations are not completely interconnected with each other. 
+- It effectively represents the relationships and weights (costs and distances) between locations.
+
+2. **Efficiency and Reliability** 
+- The process of adding nodes and edges is both simple and quick. 
+- Operations such as querying neighbors and iterating through edges are efficiently supported. 
 
 ## Big O Performance Characteristics 
-1. 
+1. **Space Complexity:**
+- O(V + E), V represents the number of nodes and E denotes the number of edges.  
+- This complexity is particularly memory efficient for sparse graphs.  
+
+2. **Adding a node:** 
+- O(1), This operation consists of inserting a key into the adjacency list. 
+
+3. **Adding an edge:**  
+- O(1) for each direction in an undirected graph, which involves a single append to the list.
+
+## Reflection on the use of Generative AI: 
+Generative AI such as ChatGPT and Microsoft Copilot are both useful in offering insight and feedback to coding and documentation. AI was able to simplify concepts such as “Big O Performance Characteristics” and made it easier to understand. AI also provided helpful recommendations for the Delivery Optimization System, such as adding error handling to create a more robust application.  
